@@ -5,10 +5,12 @@
 
 function ketQuaDaiHoc() {
     var diemChuan = document.getElementById("num1").value;
-    var diemThiSinh = document.getElementById("num2").value;
+    var num2 = document.getElementById("num2").value;
+    var num3 = document.getElementById("num3").value;
+    var num4 = document.getElementById("num4").value;
     var KV = document.getElementById("KhuVuc").value;
     var doiTuong = document.getElementById("DoiTuong").value;
-
+    var diemThiSinh = Number(num2) + Number(num3) + Number(num4);
     if (KV == "A" && doiTuong == "1") {
         diemThiSinh = Number(diemThiSinh) + 2 + 2.5;
         if (diemThiSinh > diemChuan) {
